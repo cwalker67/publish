@@ -19,5 +19,6 @@ assemble_maven(
 
 deploy_maven(
     name = "deploy-maven",
-    target = ":assemble-maven"
+    target = ":assemble-maven",
+    deployment_properties = "//:repo.properties"
 )
